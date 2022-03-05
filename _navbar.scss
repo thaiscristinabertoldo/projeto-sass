@@ -1,0 +1,34 @@
+@use './variables';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: variables.$corPrimaria;
+  padding-left: variables.$paddindBase;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+
+    li {
+      @include variables.hover;
+
+      font: 1.2em sans-serif;
+      font-weight: bold;
+      color: variables.$corSecundaria;
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      &:first-child {
+        margin-right: 12px;
+      }
+    }
+  }
+}

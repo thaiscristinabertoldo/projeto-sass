@@ -1,0 +1,60 @@
+@use './variables';
+@use './navbar';
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: variables.$corBackground;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: variables.$corPrimaria;
+}
+
+::-webkit-scrollbar-thumb {
+  background: variables.$corSecundaria;
+}
+
+.main {
+  padding: variables.$paddindBase;
+}
+
+.button {
+  @include variables.hover;
+  color: inherit;
+  text-decoration: none;
+  background-color: variables.$corSecundaria;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.form {
+  button {
+    @extend .button;
+    background-color: variables.$corPrimaria;
+    color: white;
+  }
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: auto;
+  padding-left: variables.$paddindBase;
+  background-color: variables.$corPrimaria;
+  color: white;
+}

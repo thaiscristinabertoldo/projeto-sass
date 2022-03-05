@@ -1,0 +1,88 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2b6777;
+  padding-left: 2%;
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+.navbar ul li {
+  font: 1.2em sans-serif;
+  font-weight: bold;
+  color: #f6c453;
+}
+.navbar ul li:hover {
+  filter: brightness(75%);
+}
+.navbar ul li a,
+.navbar ul li a:visited,
+.navbar ul li a:hover,
+.navbar ul li a:active {
+  color: inherit;
+  text-decoration: none;
+}
+.navbar ul li:first-child {
+  margin-right: 12px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b6777;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f6c453;
+}
+
+.main {
+  padding: 2%;
+}
+
+.button, .form button {
+  color: inherit;
+  text-decoration: none;
+  background-color: #f6c453;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover, .form button:hover {
+  filter: brightness(75%);
+}
+
+.form button {
+  background-color: #2b6777;
+  color: white;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: auto;
+  padding-left: 2%;
+  background-color: #2b6777;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

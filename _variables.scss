@@ -1,0 +1,11 @@
+$corPrimaria: #2b6777;
+$corSecundaria: #f6c453;
+$corBackground: #f2f2f2;
+
+$paddindBase: 2%;
+
+@mixin hover {
+  &:hover {
+    filter: brightness(75%);
+  }
+}
